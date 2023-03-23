@@ -1,3 +1,8 @@
+@font-face{
+  font-family: "Fifa";
+  src: url(./EASPORTS15.ttf)
+}
+
 /* stylelint-disable selector-list-comma-newline-after */
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -114,6 +119,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 /**************My style********/
+.miHeader{
+  background-image: url(../image/fondoHeader.webp);
+  background-size: cover;
+  background-position: center;
+}
+.blog-header-logo{
+  text-decoration: none;
+  font-family: "Fifa" !important;
+  letter-spacing: 3px;
+  font-size: 3rem;
+}
 .imgStyle{
   background-size: cover;
   background-position: center;
@@ -123,3 +139,24 @@ h1, h2, h3, h4, h5, h6 {
   height:250px;
   object-fit: fill;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #aaa6ab #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #aaa6ab;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }

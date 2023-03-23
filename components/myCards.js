@@ -2,10 +2,9 @@ export default {
     cards:[
         {
             article: "FOR SERVERS",
-            title: `Featured post`,
-            date: `Nov 12`,
-            information: `his is a wider card with supporting text below as a natural lead-in to
-            additional content.`,
+            title: `Comité de Ética`,
+            date: `Mar 23`,
+            information: `La Comisión de Ética de la FIFA suspende provisionalmente a un entrenador de la RD del Congo.`,
             image: `../image/image1.png`,
             btn: {
                 name:`Continue reading`,
@@ -14,11 +13,10 @@ export default {
         },
         {
             article: "FOR SERVERS",
-            title: `Featured post`,
-            date: `Nov 12`,
-            information: `his is a wider card with supporting text below as a natural lead-in to
-            additional content.`,
-            image: `../image/image1.png`,
+            title: `Copa Mundial Femenina de la FIFA 2023™`,
+            date: `Mar 21`,
+            information: `Confirmadas las 32 bases operativas de la Copa Mundial Femenina de la FIFA™.`,
+            image: `../image/image3.jpg`,
             btn: {
                 name:`Continue reading`,
                 href: `#`
@@ -26,11 +24,10 @@ export default {
         },
         {
             article: "FOR SERVERS",
-            title: `Featured post`,
-            date: `Nov 12`,
-            information: `his is a wider card with supporting text below as a natural lead-in to
-            additional content.`,
-            image: `../image/image1.png`,
+            title: `Desarrollo del Fútbol`,
+            date: `Mar 17`,
+            information: `Arsène Wenger: "Creo que es una oportunidad enorme para el mundo del fútbol".`,
+            image: `../image/image2.jpg`,
             btn: {
                 name:`Continue reading`,
                 href: `#`
@@ -42,7 +39,7 @@ export default {
 
             document.querySelector("#cards").insertAdjacentHTML("beforeend", `
             <div class="col-md-6">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 text-primary">${val.article}</strong>
                     <h3 class="mb-0">${val.title}</h3>
