@@ -9,51 +9,51 @@ export default {
             title:"Torneos",
             link:[
                 {
-                    name:"-Copa Mundial de la FIFA.",
+                    name:"- Copa Mundial de la FIFA.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial Femenina de la FIFA.",
+                    name:"- Copa Mundial Femenina de la FIFA.",
                     href:"#"
                 },
                 {
-                    name:"-Torneo Olímpico de Fútbol Femenino.",
+                    name:"- Torneo Olímpico de Fútbol Femenino.",
                     href:"#"
                 },
                 {
-                    name:"-Torneo Olímpico de Fútbol Masculino.",
+                    name:"- Torneo Olímpico de Fútbol Masculino.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial de Fútbol Sub-20.",
+                    name:"- Copa Mundial de Fútbol Sub-20.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial de Fútbol Sub-17.",
+                    name:"- Copa Mundial de Fútbol Sub-17.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial de Fútbol Playa de FIFA.",
+                    name:"- Copa Mundial de Fútbol Playa de FIFA.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial de Clubes de la FIFA.",
+                    name:"- Copa Mundial de Clubes de la FIFA.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial Femenina de Fútbol Sub-17.",
+                    name:"- Copa Mundial Femenina de Fútbol Sub-17.",
                     href:"#"
                 },
                 {
-                    name:"-Copa Mundial Femenina de Fútbol Sub-20.",
+                    name:"- Copa Mundial Femenina de Fútbol Sub-20.",
                     href:"#"
                 },
                 {
-                    name:"-Campeonato Mundial de Futsal de la FIFA.",
+                    name:"- Campeonato Mundial de Futsal de la FIFA.",
                     href:"#"
                 },
                 {
-                    name:"-Torneo Olímpico Juvenil de Futsal Masculino.",
+                    name:"- Torneo Olímpico Juvenil de Futsal Masculino.",
                     href:"#"
                 },
             ]
@@ -84,7 +84,7 @@ export default {
             )
             
         });
-        document.querySelector("#nav"). insertAdjacentHTML("beforeend", data.join(""))
+        document.querySelector("#nav").insertAdjacentHTML("beforeend", data.join(""))
     },
     card(val){
         return `<div class="p-4 mb-3 rounded shadow text-white" style="background-color: #004c97;">

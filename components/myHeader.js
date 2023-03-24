@@ -46,7 +46,7 @@ export default {
     listarCategorias(){
         let plantilla = ""
         this.tournament.forEach((val,id) => {
-            plantilla += `<a class="p-2 px-2 fs-6 link-secondary links "  href="${val.href}">${val.name}</a>`;
+            plantilla += `<a class="p-2 px-3 fs-6 link-secondary links "  href="${val.href}">${val.name}</a>`;
         });
         document.querySelector("#tournament").insertAdjacentHTML("beforeend", plantilla)
     }
