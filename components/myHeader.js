@@ -36,17 +36,17 @@ export default {
         },
     ],
     listTitle(){
-        let plantilla = `<a class="blog-header-logo text-white" href="#">${this.title}</a>`;
+        let plantilla = `<a class="blog-header-logo text-white text-center" href="#">${this.title}</a>`;
         let plantillaLogo = `<img class="img-fluid" src="${this.logo}" alt="" width="90" height="84">`
 
         document.querySelector("#title").insertAdjacentHTML("beforeend", plantilla)
         document.querySelector("#logo").insertAdjacentHTML("beforeend", plantillaLogo)
 
     },
-    listarTournament(){
+    listarCategorias(){
         let plantilla = ""
         this.tournament.forEach((val,id) => {
-            plantilla += `<a class="p-2 px-3 fw-bolder fs-6 link-secondary"  href="${val.href}">${val.name}</a>`;
+            plantilla += `<a class="p-2 px-2 fs-6 link-secondary links "  href="${val.href}">${val.name}</a>`;
         });
         document.querySelector("#tournament").insertAdjacentHTML("beforeend", plantilla)
     }

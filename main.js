@@ -4,7 +4,7 @@ import myCards from "./components/myCards.js";
 import myAside from "./components/myAside.js";
 
 myHeader.listTitle();
-myHeader.listarTournament();
+myHeader.listarCategorias();
 
 myBanner.showImage();
 myBanner.listBanner();
