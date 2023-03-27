@@ -5,17 +5,15 @@ import myAside from "./components/myAside.js";
 import myArticle from "./components/myArticle.js";
 import myFooter from "./components/myFooter.js";
 
-myHeader.showFragment()
+myHeader.showFragment();
 
-myHeader.listTitle();
-/* myHeader.listarCategorias(); */
-
+myBanner.showFragment();
 myBanner.showImage();
-myBanner.listBanner();
+
 
 myCards.showCards();
 
-myAside.showAside();
+myAside.showFragment();
 
 myArticle.showArticle1();
 myArticle.showArticle2();

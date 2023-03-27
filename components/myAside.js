@@ -77,30 +77,15 @@ export default {
             ]
         }
     ],
-    showAside(){
-        const data= this.nav.map((val,id) => {
-            return(
-                (val.link) ?this.list(val) :this.card(val)
-            )
-            
-        });
-        document.querySelector("#nav").insertAdjacentHTML("beforeend", data.join(""))
-    },
-    card(val){
-        return `<div class="p-4 mb-3 rounded shadow text-white" style="background-color: #004c97;">
-        <h4 class="fst-italic">${val.title}</h4>
-        <p class="mb-0 fst-italic">${val.paragraph}</p>
-      </div>`
-    },
-    list(p1){
-        return `
-        <div class="p-4">
-        <h4 class="fst-italic" >${p1.title}</h4>
-        <ol class="list-unstyled mb-0">
-        ${p1.link.map((val,id) => `<li class="my-2"><a class="link-secondary text-break links" style="text-decoration:none" href="${val.href}">${val.name}</a></li>`).join("")}
-        </ol>
-      </div>
-        `
-    }
+    showFragment(){
+        const ws = new Worker("storage/wsMyAside.js", {type:"module"});
 
+        ws.postMessage({module: "showAside", data: this.nav});
+
+        ws.addEventListener("message", (e)=>{
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+            document.querySelector("#nav").append(...doc.body.children)
+            ws.terminate()
+        })
+    },
 }
