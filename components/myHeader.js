@@ -43,11 +43,15 @@ export default {
         document.querySelector("#logo").insertAdjacentHTML("beforeend", plantillaLogo)
 
     },
-    listarCategorias(){
-        let plantilla = ""
-        this.tournament.forEach((val,id) => {
-            plantilla += `<a class="p-2 px-3 fs-6 link-secondary links "  href="${val.href}">${val.name}</a>`;
-        });
-        document.querySelector("#tournament").insertAdjacentHTML("beforeend", plantilla)
+    
+    showFragment(){
+        const ws = new Worker("storage/wsMyheader.js", {type: "module"});
+        ws.postMessage({module: "listarCategorias", data: this.tournament});
+
+        ws.addEventListener("message", (e) =>{
+            let doc = new DOMParser().parseFromString(e.data.message, "text/html");
+            document.querySelector("#tournament").append(...doc.body.children);
+            
+        })
     }
 }

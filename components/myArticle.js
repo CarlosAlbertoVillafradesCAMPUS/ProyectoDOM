@@ -222,7 +222,7 @@ export default {
             return(
                 data.insertAdjacentHTML("beforeend", `
                 <dt>${val.name}: </dt>
-                <dd>${val.description}/dd>
+                <dd>${val.paragraph}</dd>
                 `)
             )
         }).join("");
