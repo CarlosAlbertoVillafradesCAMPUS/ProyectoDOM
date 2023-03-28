@@ -6,35 +6,35 @@ export default {
     tournament:[
         {
             name: "TORNEOS EN FIFA",
-            href: "#"
+            href: "https://www.fifa.com/fifaplus/es/tournaments"
         },
         {
             name: "SOBRE LA FIFA",
-            href: "#"
+            href: "https://www.fifa.com/es/about-fifa"
         },
         {
             name: "FUTBOL FEMENINOS",
-            href: "#"
+            href: "https://www.fifa.com/es/womens-football"
         },
         {
             name: "IMPACTO SOCIAL",
-            href: "#"
+            href: "https://www.fifa.com/es/social-impact"
         },
         {
             name: "DESARROLLO DEL FUTBOL",
-            href: "#"
+            href: "https://www.fifa.com/es/football-development"
         },
         {
             name: "TECNICO",
-            href: "#"
+            href: "https://www.fifa.com/es/technical"
         },
         {
             name: "LEGAL",
-            href: "#"
+            href: "https://www.fifa.com/es/legal"
         },
         {
             name: "CLASIFICACION",
-            href: "#"
+            href: "https://www.fifa.com/es/fifa-world-ranking"
         },
     ],
     

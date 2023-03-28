@@ -146,104 +146,29 @@ export default {
             incluso fuera de los países francófonos.`
         }
     },
-    showArticle1(){
-        document.querySelector("#article_1").insertAdjacentHTML("beforeend",`
-        <h2 class="blog-post-title">${this.data.article1.title}</h2>
-          <p class="blog-post-meta">${this.data.article1.date}</p>
-          <p>${this.data.article1.paragraph}</p>          
-          <h3>${this.data.article1.rankin.title}</h3>
-          <p>${this.data.article1.rankin.description}</p>
-          <table class="table bg-white">
-            <thead>
-              <tr>
-                <th>RK</th>
-                <th>Equipo</th>
-                <th>Puntos</th>
-              </tr>
-            </thead>
-            <tbody id="tableBody">
-              
-            </tbody>
-          </table>
+    showFragment(){
+        const ws = new Worker("storage/wsMyArticle.js", {type:"module"});
 
-        `);
-        this.data.article1.rankin.list.map((val,id) =>{
-            let tableBody = document.querySelector("#tableBody");
-            return(
-                tableBody.insertAdjacentHTML("beforeend", `
-                <tr>
-                    <td>${val.rank}</td>
-                    <td>${val.name}</td>
-                    <td>${val.points}</td>
-                </tr>
-                `)
-            )           
-        }).join("")
-    },
-    showArticle2(){
-        document.querySelector("#article_2"). insertAdjacentHTML("beforeend",`
-        <h2 class="blog-post-title">${this.data.article2.title}</h2>
-        <p class="blog-post-meta">January 2, 2023 </p>
+        let id =[]
+        let count = 0
+        id.push("#article_1")
+        ws.postMessage({module:"showArticle1", data:this.data.article1})
+        id.push("#article_1")
+        ws.postMessage({module:"showTable", data:this.data.article1.rankin.list})
+        id.push("#article_2")
+        ws.postMessage({module:"showArticle2", data: this.data.article2})
+        id.push("#article_3")
+        ws.postMessage({module:"showArticle3", data: this.data.article3})
 
-        <p>${this.data.article2.paragraph}</p>
-        <hr>
-        <p>${this.data.article2.section1.paragraph1}</p>
-        <h2>${this.data.article2.section1.title}</h2>
-        <p>${this.data.article2.section1.paragraph2}</p>
-        <h3>${this.data.article2.section2.titleList}</h3>
-        <p>${this.data.article2.section2.description}</p>
-        <ul id="federaciones">
+        ws.addEventListener("message", (e) =>{
 
-        </ul>
-        <p>${this.data.article2.section2.confederaciones.description}</p>
-        <dl id="confederaciones">
-          
-        </dl>
-        <h2>${this.data.article2.section3.title}</h2>
-        <p>${this.data.article2.section3.paragraph}</p>
-        <ul id="presidentes">
-          
-        </ul>
-        <h2>${this.data.article2.section4.title}</h2>
-        <p>${this.data.article2.section4.paragraph}</p>
-        `);
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+            document.querySelector(id[count]).append(...doc.body.children);
 
-        this.data.article2.section2.list.map((val,id)=>{
-            let data = document.querySelector("#federaciones");
-            return(
-                data.insertAdjacentHTML("beforeend", `
-                <li> ${val}</li>
-                `)
-            )
-        }).join("");
-
-        this.data.article2.section2.confederaciones.list.map((val,id) => {
-            let data = document.querySelector("#confederaciones");
-            return(
-                data.insertAdjacentHTML("beforeend", `
-                <dt>${val.name}: </dt>
-                <dd>${val.paragraph}</dd>
-                `)
-            )
-        }).join("");
-
-        this.data.article2.section3.list.map((val,id)=>{
-            let data = document.querySelector("#presidentes");
-            return(
-                data.insertAdjacentHTML("beforeend", `
-                <li><strong>${val.cargo}: </strong>${val.name}</li>
-                `)
-            )
+            (id.length-1 == count) ?ws.terminate() :count++
+            
         })
 
     },
-    showArticle3(){
-        document.querySelector("#article_3").insertAdjacentHTML("beforeend", `
-        <h2 class="blog-post-title">${this.data.article3.title}</h2>
-          <p>${this.data.article3.paragraph}</p>
-            `)
-    }
-
-
 
 }

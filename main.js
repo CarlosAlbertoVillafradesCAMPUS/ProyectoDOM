@@ -11,13 +11,12 @@ myBanner.showFragment();
 myBanner.showImage();
 
 
-myCards.showCards();
+myCards.showFragment();
 
 myAside.showFragment();
 
-myArticle.showArticle1();
-myArticle.showArticle2();
-myArticle.showArticle3();
+myArticle.showFragment();
 
-myFooter.showFooter();
+
+myFooter.showFragment();
 

@@ -3,19 +3,19 @@ export default {
         name:"Carlos Villafrades Pinilla",
         redes:{
             name1: "GitHub",
-            href1: "#",
+            href1: "https://github.com/CarlosAlbertoVillafradesCAMPUS",
             name2: "Instagram",
-            href2: "#",
+            href2: "https://www.instagram.com/carlos_villafradess/?hl=es",
         },
         copyrigth: "©CampusLand"
 },
-showFooter(){
-    document.querySelector("#my_footer").insertAdjacentHTML("beforeend", `
-    <p>${this.data.name} <a href="${this.data.redes.href1}">${this.data.redes.name1}</a> And <a
-        href="${this.data.redes.href2}"> ${this.data.redes.name2}</a>.</p>
-    <p>
-      <a href="#">${this.data.copyrigth}</a>
-    </p>
-    `)
-}
+showFragment(){
+    const ws = new Worker("storage/wsMyFooter.js", {type:"module"});
+    ws.postMessage({module: "showFooter", data: this.data});
+
+    ws.addEventListener("message", (e) =>{
+        let doc = new DOMParser().parseFromString(e.data, "text/html");
+        document.querySelector("#my_footer").append(...doc.body.children)
+    })
+},
 }

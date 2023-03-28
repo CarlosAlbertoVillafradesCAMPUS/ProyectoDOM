@@ -62,16 +62,16 @@ export default {
             title: "Contact Us",
             link:[
                 {
-                    name:"GitHub",
-                    href:"#"
+                    name:"Instagram",
+                    href:"https://www.instagram.com/fifa/"
                 },
                 {
                     name:"Twiter",
-                    href:"#"
+                    href:"https://twitter.com/fifacom_es?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                 },
                 {
                     name:"Facebook",
-                    href:"#"
+                    href:"https://www.facebook.com/fifaworldcup/?locale=es_LA"
                 }
 
             ]

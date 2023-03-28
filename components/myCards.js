@@ -8,7 +8,7 @@ export default {
             image: `../image/image1.png`,
             btn: {
                 name:`Continue reading`,
-                href: `#`
+                href: `https://www.fifa.com/es/legal/judicial-bodies/media-releases/la-comision-de-etica-de-la-fifa-suspende-provisionalmente-a-un-entrenador-de`
             }
         },
         {
@@ -19,7 +19,7 @@ export default {
             image: `../image/image3.jpg`,
             btn: {
                 name:`Continue reading`,
-                href: `#`
+                href: `https://www.fifa.com/es/tournaments/womens/womensworldcup/australia-new-zealand2023/news/confirmadas-las-32-bases-operativas-de-la-copa-mundial-femenina-de-la-fifa`
             }
         },
         {
@@ -30,7 +30,7 @@ export default {
             image: `../image/image2.jpg`,
             btn: {
                 name:`Continue reading`,
-                href: `#`
+                href: `https://www.fifa.com/es/football-development/news/arsene-wenger-podemos-hacer-algo-excepcional`
             }
         },
         {
@@ -41,7 +41,7 @@ export default {
             image: `../image/image5.jpg`,
             btn: {
                 name:`Continue reading`,
-                href: `#`
+                href: `https://www.fifa.com/es/tournaments/womens/womensworldcup/australia-new-zealand2023/news/tres-selecciones-coronan-nuevas-cumbres-y-completan-el-elenco-de-la-copa`
             }
         },
         {
@@ -52,31 +52,22 @@ export default {
             image: `../image/image1.png`,
             btn: {
                 name:`Continue reading`,
-                href: `#`
+                href: `https://publications.fifa.com/es/annual-report-2022`
             }
         }
     ],
-    showCards(){
-        this.cards.forEach((val,id) => {
+    showFragment(){
+        const ws = new Worker("storage/wsMyCards.js", {type:"module"});
 
-            document.querySelector("#cards").insertAdjacentHTML("beforeend", `
-            <div class="col-md-6 pt-4">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative bg-white">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary">${val.article}</strong>
-                    <h3 class="mb-0">${val.title}</h3>
-                    <div class="mb-1 text-muted">${val.date}</div>
-                    <p class="card-text mb-auto">${val.information}</p>
-                    <a href="${val.btn.href}" class="stretched-link">${val.btn.name}</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <img class="imageCard" src="${val.image}" >
-                </div>
-                </div>
-            </div>
-            `)
-        });
+        ws.postMessage({module:"showCards", data: this.cards})
+
+        ws.addEventListener("message", (e) => {
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+            document.querySelector("#cards").append(...doc.body.children)
+            ws.terminate()
+        })
+
         
-    }
+    },
 
 }
