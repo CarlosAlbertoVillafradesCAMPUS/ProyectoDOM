@@ -1,44 +1,11 @@
+import config from "../storage/config.js";
 export default {
-    title: {
-        name:`FIFA (®)`,
-        logo: "../image/FIFA logo.png",
-    },
-    tournament:[
-        {
-            name: "TORNEOS EN FIFA",
-            href: "https://www.fifa.com/fifaplus/es/tournaments"
-        },
-        {
-            name: "SOBRE LA FIFA",
-            href: "https://www.fifa.com/es/about-fifa"
-        },
-        {
-            name: "FUTBOL FEMENINOS",
-            href: "https://www.fifa.com/es/womens-football"
-        },
-        {
-            name: "IMPACTO SOCIAL",
-            href: "https://www.fifa.com/es/social-impact"
-        },
-        {
-            name: "DESARROLLO DEL FUTBOL",
-            href: "https://www.fifa.com/es/football-development"
-        },
-        {
-            name: "TECNICO",
-            href: "https://www.fifa.com/es/technical"
-        },
-        {
-            name: "LEGAL",
-            href: "https://www.fifa.com/es/legal"
-        },
-        {
-            name: "CLASIFICACION",
-            href: "https://www.fifa.com/es/fifa-world-ranking"
-        },
-    ],
-    
     showFragment(){
+        config.dataMyheader(); //llamamos a la funcion que tenemos en el archivo config.js
+        Object.assign(this,JSON.parse(localStorage.getItem("myHeader"))) //sirve para convertir la inforcaion de traemos del local storage y transformaral en un objeto JSON
+        //el this hace referencia a la variable o al nombre de nuetsro objeto traido del local storage
+
+        
         //creamos el worker
         const ws = new Worker("storage/wsMyheader.js", {type: "module"});
 

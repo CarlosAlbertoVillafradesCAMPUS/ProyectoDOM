@@ -1,15 +1,8 @@
+import config from "../storage/config.js";
 export default {
-    data:{
-        name:"Carlos Villafrades Pinilla",
-        redes:{
-            name1: "GitHub",
-            href1: "https://github.com/CarlosAlbertoVillafradesCAMPUS",
-            name2: "Instagram",
-            href2: "https://www.instagram.com/carlos_villafradess/?hl=es",
-        },
-        copyrigth: "©CampusLand"
-},
 showFragment(){
+    config.dataMyfooter()
+    Object.assign(this,JSON.parse(localStorage.getItem("myFooter")))
     const ws = new Worker("storage/wsMyFooter.js", {type:"module"});
     ws.postMessage({module: "showFooter", data: this.data});
 

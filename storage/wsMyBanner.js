@@ -1,7 +1,7 @@
 export let wsMyBanner = { 
     listBanner(p1){
         let plantilla = ` <h1 class="display-4 fst-italic ">${p1.title}</h1>
-        <p class="lead my-3 ">${p1.text}</p>
+        <p class="lead my-3 texto">${p1.text}</p>
         <p class="lead mb-0 "><a href="${p1.vinculo.href}" class="text-white fw-bold">${p1.vinculo.name}</a></p>`
         
         return plantilla;
