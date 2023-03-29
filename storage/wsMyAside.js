@@ -9,9 +9,9 @@ export let wsMyAside = {
         return data;
     },
     card(val){
-        return `<div class="p-4 mb-3 rounded shadow text-white" style="background-color: #004c97;">
-        <h4 class="fst-italic">${val.title}</h4>
-        <p class="mb-0 fst-italic">${val.paragraph}</p>
+        return `<div class="p-4 mb-3 rounded shadow">
+        <h4 class="fst-italic" style="color:#c8aa6e">${val.title}</h4>
+        <p class="mb-0 fst-italic" style="color:#f0e6d2">${val.paragraph}</p>
       </div>`
     },
     list(p1){
@@ -19,7 +19,13 @@ export let wsMyAside = {
         <div class="p-4">
         <h4 class="fst-italic" >${p1.title}</h4>
         <ol class="list-unstyled mb-0">
-        ${p1.link.map((val,id) => `<li class="my-2"><a class="link-secondary text-break links" style="text-decoration:none" href="${val.href}">${val.name}</a></li>`).join("")}
+        ${p1.link.map((val,id) => `<li class="my-2">
+        <div class="w-100">
+          <img src="${val.image}" width="90" height="84">
+         </div>
+         <h5 class="link-secondary text-break links">${val.name}</h5>
+         <p> ${val.description}</p>
+         </li>`).join("")}
         </ol>
       </div>
         `

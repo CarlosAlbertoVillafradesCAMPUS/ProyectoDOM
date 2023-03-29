@@ -135,16 +135,29 @@ body{
 }
 .links{
   text-decoration: none;
+  color: white;
 }
 .links:hover{
-  color: #000;
+  color: #6d5d3d;
 }
 .imgStyle{
   background-size: cover;
   
 }
+a{
+  color: #c8aa6e
+}
+a:hover{
+  color: #6d5d3d;
+}
+a:active{
+  color: #c8aa6e
+}
+.contain-card{
+  
+}
 .imageCard{
-  width:200px;
+  width:230px;
   height:250px;
   object-fit: fill;
 }

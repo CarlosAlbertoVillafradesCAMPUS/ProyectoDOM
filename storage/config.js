@@ -43,59 +43,25 @@ export default {
             nav:[
                 {
                     title:"Dato Curioso",
-                    paragraph:`"En Suecia 1958 el jugador brasileño Pelé, con solo 17 años y 239 días,
-                     se convierte en el jugador más joven en marcar un gol en un mundial, en un encuentro contra País de Gales."`
+                    paragraph:`"El baile de Riven se parece a la Danza del Agua de Braavos de Game of Thrones."`
                 },
                 {
-                    title:"Torneos",
+                    title:"Habilidades",
                     link:[
                         {
-                            name:"- Copa Mundial de la FIFA.",
-                            href:"#"
+                            name:"Espada Runica",
+                            description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
+                            image: "../image/logo-removebg-preview.png"
                         },
                         {
-                            name:"- Copa Mundial Femenina de la FIFA.",
-                            href:"#"
+                            name:"Espada Runica",
+                            description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
+                            image: "../image/logo-removebg-preview.png"
                         },
                         {
-                            name:"- Torneo Olímpico de Fútbol Femenino.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Torneo Olímpico de Fútbol Masculino.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Copa Mundial de Fútbol Sub-20.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Copa Mundial de Fútbol Sub-17.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Copa Mundial de Fútbol Playa de FIFA.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Copa Mundial de Clubes de la FIFA.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Copa Mundial Femenina de Fútbol Sub-17.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Copa Mundial Femenina de Fútbol Sub-20.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Campeonato Mundial de Futsal de la FIFA.",
-                            href:"#"
-                        },
-                        {
-                            name:"- Torneo Olímpico Juvenil de Futsal Masculino.",
-                            href:"#"
+                            name:"Espada Runica",
+                            description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
+                            image: "../image/logo-removebg-preview.png"
                         },
                     ]
                 },
@@ -132,7 +98,7 @@ export default {
                  reforjado`,
                 vinculo: {
                     name: "Continue reading",
-                    href: "https://www.fifa.com/es/social-impact/campaigns/no-discrimination/news/la-fifa-celebra-el-dia-internacional-de-la-eliminacion-de-la-discriminacion-racial"
+                    href: "https://universe.leagueoflegends.com/es_ES/story/champion/riven/#:~:text=Riven%20demostr%C3%B3%20tener%20madera%20de,hermanas%20de%20armas%20era%20inquebrantable."
                 },
             },
         }))
@@ -141,57 +107,79 @@ export default {
         localStorage.setItem("myCards", JSON.stringify({
             cards:[
                 {
-                    article: "LEGENDARIO",
-                    title: `Centinela Riven`,
+                    article: "SKIN LEGENDARIA",
+                    title: `Riven Centinela`,
                     date: `9/marzo/2023`,
-                    information: `Riven siempre estuvo obsesionada por sus crímenes como soldado noxiano. Es por eso que finalmente se unió a los Sentinels como una forma de redimir sus pecados.`,
-                    image: `../image/image1.png`,
+                    information: `Riven siempre estuvo obsesionada por sus crímenes como soldado noxiano. Es por eso que finalmente se unió a los centinelas.`,
+                    image: `../image/image1.jpg`,
                     btn: {
-                        name:`Continue reading`,
+                        name:`Mas Informacion`,
                         href: `https://www.fifa.com/es/legal/judicial-bodies/media-releases/la-comision-de-etica-de-la-fifa-suspende-provisionalmente-a-un-entrenador-de`
                     }
                 },
                 {
-                    article: "INFORMATIVO",
-                    title: `Copa Mundial Femenina 2023™`,
-                    date: `Mar 21`,
-                    information: `Confirmadas las 32 bases operativas de la Copa Mundial Femenina de la FIFA™.`,
-                    image: `../image/image3.jpg`,
+                    article: "SKIN LEGENDARIA",
+                    title: `Riven Flor Espiritual`,
+                    date: `7/septiembre/2021`,
+                    information: `Riven fue destruida en el calor de la batalla hace miles de años, su espada se hizo añicos en el proceso.`,
+                    image: `../image/image2.jpg`,
                     btn: {
-                        name:`Continue reading`,
+                        name:`Mas Informacion`,
                         href: `https://www.fifa.com/es/tournaments/womens/womensworldcup/australia-new-zealand2023/news/confirmadas-las-32-bases-operativas-de-la-copa-mundial-femenina-de-la-fifa`
                     }
                 },
                 {
-                    article: "INFORMATIVO",
-                    title: `Desarrollo del Fútbol`,
-                    date: `Mar 17`,
-                    information: `Arsène Wenger: "Creo que es una oportunidad enorme para el mundo del fútbol".`,
-                    image: `../image/image2.jpg`,
+                    article: "SKIN EPICA",
+                    title: `Riven Espada Valiente`,
+                    date: `26/septiembre/2020`,
+                    information: `Riven demostró haber nacido para el combate. A pesar de su corta edad, sus años de trabajo duro permitieron que dominase su gran poder.`,
+                    image: `../image/image3.jpg`,
                     btn: {
-                        name:`Continue reading`,
+                        name:`Mas Informacion`,
                         href: `https://www.fifa.com/es/football-development/news/arsene-wenger-podemos-hacer-algo-excepcional`
                     }
                 },
                 {
-                    article: "INFORMATIVO",
-                    title: `Presidente de la FIFA`,
-                    date: `Mar 8`,
-                    information: `Inaugurado el estadio Kigali Pelé en Ruanda".`,
-                    image: `../image/image5.jpg`,
+                    article: "SKIN EPICA",
+                    title: `Riven Pulso de Fuego`,
+                    date: ` 14/mayo/2019`,
+                    information: `Riven cree en la pureza temporal, y castigará a cualquiera que abuse de la manipulación del tiempo para su propio beneficio.`,
+                    image: `../image/image4.jpg`,
                     btn: {
-                        name:`Continue reading`,
+                        name:`Mas Informacion`,
                         href: `https://www.fifa.com/es/tournaments/womens/womensworldcup/australia-new-zealand2023/news/tres-selecciones-coronan-nuevas-cumbres-y-completan-el-elenco-de-la-copa`
                     }
                 },
                 {
-                    article: "INFORMATIVO",
-                    title: `Copa Mundial de la FIFA Catar 2022™`,
-                    date: `Feb 20`,
-                    information: `2019-2022: cuatro años de progresos sin precedentes.`,
-                    image: `../image/image1.png`,
+                    article: "SKIN LEGENDARIA",
+                    title: `Riven Portadora de Amanecer`,
+                    date: `23/abril/2019`,
+                    information: `Nacida de las agitadas energías en el alba de la creación, es la personificación viviente del orden en el cosmos.`,
+                    image: `../image/image5.jpg`,
                     btn: {
-                        name:`Continue reading`,
+                        name:`Mas Informacion`,
+                        href: `https://publications.fifa.com/es/annual-report-2022`
+                    }
+                },
+                {
+                    article: "SKIN EPICA",
+                    title: `Riven Arcadia`,
+                    date: `17/mayo/2018`,
+                    information: ` Siendo honestos, si le cambias el color de cabello a púrpura y le pones un labial, es idéntica a Kai'Sa.`,
+                    image: `../image/image6.jpg`,
+                    btn: {
+                        name:`Mas Informacion`,
+                        href: `https://publications.fifa.com/es/annual-report-2022`
+                    }
+                },
+                {
+                    article: "SKIN EPICA",
+                    title: `Riven Conejita`,
+                    date: `6/abril/2017`,
+                    information: `la Conejita Guerrera vuelve a estar en los ojos de la comunidad. Además la línea de aspectos `,
+                    image: `../image/image7.jpg`,
+                    btn: {
+                        name:`Mas Informacion`,
                         href: `https://publications.fifa.com/es/annual-report-2022`
                     }
                 }

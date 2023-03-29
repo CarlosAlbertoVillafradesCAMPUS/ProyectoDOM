@@ -7,7 +7,7 @@ export let wsMyheader = {
        return plantilla;
     },
     listTitle(p1){
-        let plantilla = `<a class="blog-header-logo text-white text-center" href="#">${p1.name}</a>`;
+        let plantilla = `<a class="blog-header-logo text-center text-white fs-1" href="#">${p1.name}</a>`;
 
         return plantilla;
 
