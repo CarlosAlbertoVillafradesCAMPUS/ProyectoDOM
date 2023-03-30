@@ -1,10 +1,9 @@
 export let wsMyArticle = {
     showArticle1(parametro){
         let plantilla = `
-        <h2 class="blog-post-title">${parametro.title}</h2>
-          <p class="blog-post-meta">${parametro.date}</p>
+        <h2 class="blog-post-title text-white">${parametro.title}</h2>
           <p>${parametro.paragraph}</p>          
-          <h3>${parametro.rankin.title}</h3>
+          <h3 class="text-white">${parametro.rankin.title}</h3>
           <p>${parametro.rankin.description}</p>
         `;
         
@@ -13,21 +12,27 @@ export let wsMyArticle = {
     showTable(parametro){
         let plantilla = "";
             plantilla = `
-            <table class="table bg-white">
+            <table class="table bg-transparent">
             <thead>
-              <tr>
-                <th>RK</th>
-                <th>Equipo</th>
-                <th>Puntos</th>
+              <tr style="color:#c8aa6e">
+                <th>#</th>
+                <th>Invocadores</th>
+                <th>Roles</th>
+                <th>Division</th>
+                <th>Tasa Victorias</th>
+                <th>KDA</th>
               </tr>
             </thead>
-            <tbody id="tableBody">
+            <tbody  style="color:#f0e6d2" id="tableBody">
               ${parametro.map((val,id) =>{
                 return(
                 `<tr>
                 <td>${val.rank}</td>
                 <td>${val.name}</td>
-                <td>${val.points}</td>
+                <td>${val.role}</td>
+                <td>${val.division}</td>
+                <td>${val.victorias}</td>
+                <td>${val.kda}</td>
             </tr>`
                 )
               }).join("")}
@@ -52,16 +57,16 @@ export let wsMyArticle = {
         ${parametro.section2.list.map((val,id)=>{
             return(
                  `
-                <li> ${val}</li>
+                <li style="color:#c8aa6e"> ${val}</li>
                 `
             )
         }).join("")}
         </ul>
-        <p>${parametro.section2.confederaciones.description}</p>
+        <p>${parametro.section2.concejos.description}</p>
         <dl id="confederaciones">
-          ${parametro.section2.confederaciones.list.map((val,id) => {
+          ${parametro.section2.concejos.list.map((val,id) => {
             return(    
-               `<dt>${val.name}: </dt>
+               `<dt style="color:#c8aa6e">${val.name}: </dt>
                 <dd>${val.paragraph}</dd>
                 `
             )
@@ -72,7 +77,7 @@ export let wsMyArticle = {
         <ul id="presidentes">
           ${ parametro.section3.list.map((val,id)=>{
             return(
-                ` <li><strong>${val.cargo}: </strong>${val.name}</li>`
+                ` <li class="mb-2"><p class="p-0 m-0" style="color:#c8aa6e">${val.name}: </p>${val.description}</li>`
             )
         }).join("")}
         </ul>

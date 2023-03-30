@@ -1,6 +1,6 @@
 @font-face{
-  font-family: "Fifa";
-  src: url(./EASPORTS15.ttf)
+  font-family: "LOL";
+  src: url(./BeaufortforLOL-Bold.otf)
 }
 
 /* stylelint-disable selector-list-comma-newline-after */
@@ -121,15 +121,29 @@ h1, h2, h3, h4, h5, h6 {
 /**************My style********/
 body{
   background-image: url(../image/fondo.jpg);
+  font-family: "LOL"!important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "LOL" !important;
+  
 }
 .miHeader{
   background-image: url(../image/fondoHeader.webp);
   background-size: cover;
   background-position: center;
 }
+.btn{
+  background-color: #c8aa6e;
+  color: white;
+  border: 1px solid #9e8759;
+}
+.btn:hover{
+  background-color: #6d5d3d;
+  border: 1px solid #9e8759;
+}
 .blog-header-logo{
   text-decoration: none;
-  font-family: "Fifa" !important;
+  font-family: "LOL" !important;
   letter-spacing: 3px;
   font-size: 3rem;
 }
@@ -145,7 +159,8 @@ body{
   
 }
 a{
-  color: #c8aa6e
+  color: #c8aa6e;
+  font-family: "LOL";
 }
 a:hover{
   color: #6d5d3d;
@@ -153,19 +168,16 @@ a:hover{
 a:active{
   color: #c8aa6e
 }
-.contain-card{
-  
-}
 .imageCard{
   width:230px;
   height:250px;
   object-fit: fill;
 }
-/* ===== Scrollbar CSS ===== */
+  /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #aaa6ab #ffffff;
+    scrollbar-color: #c8aa6e #000000;
   }
 
   /* Chrome, Edge, and Safari */
@@ -174,11 +186,11 @@ a:active{
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background:rgba(0, 0, 0, 0.3);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #aaa6ab;
+    background-color: #c8aa6e;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 1px solid #000000;
   }

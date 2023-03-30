@@ -4,7 +4,7 @@ export let wsMyCards = {
         paramatro.forEach((val,id) => {
             plantilla += `
                 <div class="col-md-6 pt-4 contain-card">
-                    <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative" style="color:#f0e6d2">
+                    <div class="row border-end pe-3 g-0 rounded overflow-hidden flex-md-row mb-4 shadow-md h-md-250 position-relative" style="color:#f0e6d2">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-white">${val.article}</strong>
                         <h3 class="mb-0" style="color:#c8aa6e">${val.title}</h3>

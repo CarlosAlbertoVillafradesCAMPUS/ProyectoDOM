@@ -46,39 +46,49 @@ export default {
                     paragraph:`"El baile de Riven se parece a la Danza del Agua de Braavos de Game of Thrones."`
                 },
                 {
-                    title:"Habilidades",
-                    link:[
+                    title:"HABILIDADES",
+                    habilidades:[
                         {
-                            name:"Espada Runica",
+                            name:`"pasiva" ESPADA RUNICA`,
                             description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
-                            image: "../image/logo-removebg-preview.png"
+                            image: "../image/pasivaRiven.png"
                         },
                         {
-                            name:"Espada Runica",
-                            description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
-                            image: "../image/logo-removebg-preview.png"
+                            name: `"Q" ALAS ROTAS`,
+                            description:"Riven lanza una serie de golpes. Esta habilidad puede reactivarse tres veces en poco tiempo. El tercer impacto hará retroceder a los enemigos cercanos.",
+                            image: "../image/QRiven.png"
                         },
                         {
-                            name:"Espada Runica",
-                            description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
-                            image: "../image/logo-removebg-preview.png"
+                            name:`"W" ESTALLIDO DE KI`,
+                            description:"Riven emite un Estallido de ki que daña y aturde a los enemigos cercanos.",
+                            image: "../image//WRiven.png"
+                        },
+                        {
+                            name:`"E" VALOR`,
+                            description:"Riven avanza una corta distancia y bloquea el daño que recibe.",
+                            image: "../image//ERiven.png"
+                        },
+                        {
+                            name:`"R" HOJA DE EXILIO`,
+                            description:"Riven potencia su fiel arma con energía que aumenta su daño de ataque y alcance. Además, mientras dure la activación, obtiene la capacidad de usar una vez Cuchillada de viento, un potente ataque a distancia.",
+                            image: "../image//RRIVEN.png"
                         },
                     ]
                 },
                 {
-                    title: "Contact Us",
+                    title: "CONTACTANOS",
                     link:[
                         {
                             name:"Instagram",
-                            href:"https://www.instagram.com/fifa/"
+                            href:"https://www.instagram.com/leagueoflegends/?hl=es"
                         },
                         {
                             name:"Twiter",
-                            href:"https://twitter.com/fifacom_es?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            href:"https://twitter.com/lollatam"
                         },
                         {
                             name:"Facebook",
-                            href:"https://www.facebook.com/fifaworldcup/?locale=es_LA"
+                            href:"https://es-la.facebook.com/LeagueofLegendsLatino/"
                         }
         
                     ]
@@ -114,7 +124,7 @@ export default {
                     image: `../image/image1.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://www.fifa.com/es/legal/judicial-bodies/media-releases/la-comision-de-etica-de-la-fifa-suspende-provisionalmente-a-un-entrenador-de`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 },
                 {
@@ -125,7 +135,7 @@ export default {
                     image: `../image/image2.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://www.fifa.com/es/tournaments/womens/womensworldcup/australia-new-zealand2023/news/confirmadas-las-32-bases-operativas-de-la-copa-mundial-femenina-de-la-fifa`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 },
                 {
@@ -136,7 +146,7 @@ export default {
                     image: `../image/image3.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://www.fifa.com/es/football-development/news/arsene-wenger-podemos-hacer-algo-excepcional`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 },
                 {
@@ -147,7 +157,7 @@ export default {
                     image: `../image/image4.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://www.fifa.com/es/tournaments/womens/womensworldcup/australia-new-zealand2023/news/tres-selecciones-coronan-nuevas-cumbres-y-completan-el-elenco-de-la-copa`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 },
                 {
@@ -158,7 +168,7 @@ export default {
                     image: `../image/image5.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://publications.fifa.com/es/annual-report-2022`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 },
                 {
@@ -169,7 +179,7 @@ export default {
                     image: `../image/image6.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://publications.fifa.com/es/annual-report-2022`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 },
                 {
@@ -180,7 +190,7 @@ export default {
                     image: `../image/image7.jpg`,
                     btn: {
                         name:`Mas Informacion`,
-                        href: `https://publications.fifa.com/es/annual-report-2022`
+                        href: `https://www.leagueoflegends.com/es-es/champions/riven/`
                     }
                 }
             ],
@@ -190,149 +200,163 @@ export default {
        localStorage.setItem("myArticle", JSON.stringify({
         data:{
             article1:{
-                title:"Copa Mundial Femenina de la FIFA",
-                date:"Mar 24, 2023",
-                paragraph:`La Copa Mundial Femenina de la FIFA Australia/Nueva Zelanda 2023™
-                será la novena edición de la Copa Mundial Femenina de Fútbol organizada por la FIFA. Se llevará a cabo en Australia y Nueva Zelanda,
-                 siendo la primera vez que una candidatura conjunta gana la sede de un mundial femenino, y la primera oportunidad en la que se realizará 
-                 la copa en el continente oceánico.Sumado a ello, será el primer campeonato de fútbol organizado por la FIFA que se realizará en dos
-                confederaciones diferentes: la Federación de Fútbol de Australia es miembro de la Confederación Asiática de Fútbol (AFC), mientras que 
-                la Asociación de Fútbol de Nueva Zelanda pertenece a la Confederación de Fútbol de Oceanía (OFC). Será la primera edición que cuente con
-                la participación de 32 selecciones, tras la aprobación del Consejo de la FIFA del 31 de julio de 2019. `,
+                title:"La Desterrada",
+                paragraph:`Riven, que anteriormente era una líder de los guerreros de Noxus, alcanzó un alto rango
+                 gracias a la fuerza de su convicción y a su brutal eficiencia, por lo que fue recompensada con una 
+                 espada rúnica legendaria y con un batallón propio. Sin embargo, en el frente jonio, la fe de Riven
+                en su nación fue puesta a prueba y, finalmente, se quebró. Cortó todas sus ataduras con el imperio
+                en un intento por encontrar su lugar en un mundo fragmentado, incluso ante los rumores sobre la 
+                restauración de Noxus. Ahora que regresa encadenada contra su voluntad, se enfrenta a la sentencia 
+                de su antigua tierra natal... `,
                 rankin:{
-                    title:"CLASIFICACIÓN FEMENINA",
-                    description:`Las clasificaciones mundiales oficiales de los equipos internacionales femeninos.`,
+                    title:"CLASIFICACIÓN MAINS RIVEN",
+                    description:`Top 5 de los mejores mains Riven a nivel mundial:`,
                     list:[
                         {
                             rank:1,
-                            name:"EEUU",
-                            points:2091.38
+                            name:"돼지 학생 (KR)",
+                            role:"TOP",
+                            division:"Maestro",
+                            victorias:"76,8%",
+                            kda:"9.3 / 4.9 / 5.1"
                         },
                         {
                             rank:2,
-                            name:"ALEMANIA",
-                            points:2068.12
+                            name:"sehsfuyisgeb",
+                            role:"TOP",
+                            division:"Maestro",
+                            victorias:"76.4%",
+                            kda:"9.3 / 4.3 / 3.8"
                         },
                         {
                             rank:3,
-                            name:"SUECIA",
-                            points:2064.68
+                            name:"lai zi di yu",
+                            role:"TOP",
+                            division:"Diamante I",
+                            victorias:"85.7%",
+                            kda:"6.6 / 2.6 / 5.21"
                         },
                         {
                             rank:4,
-                            name:"INGLATERRA",
-                            points:2055.82
+                            name:"doegkto",
+                            role:"TOP",
+                            division:"Retador",
+                            victorias:"72.1%",
+                            kda:"8.4 / 5.5 / 4.8"
                         },
                         {
                             rank:5,
-                            name:"FRANCIA",
-                            points:2021.38
-                        },
+                            name:"my happy ending",
+                            role:"TOP",
+                            division:"Retador",
+                            victorias:"74.5%",
+                            kda:"7.7 / 4.9 / 5.3"
+                        }
                         
                     ]
                 }
     
             },
             article2:{
-                title: `Maximizar nuestra influencia en el desarrollo global del fútbol`,
-                paragraph:`Uno de los objetivos estatutarios de la FIFA es mejorar el fútbol constantemente y promocionarlo a escala global. `,      
+                title: `VETAS Y CICATRICES`,
+                paragraph:`¿Cómo llegaste a Jonia, amiga? `,      
                 section1:{
-                    paragraph1: `En la primera fase de implementación del periodo 2020-2023 descrita en La Visión, el organismo trabajó para 
-                    lograr una mayor proximidad geográfica con sus federaciones miembro. También fijó los cimientos para seguir creciendo mediante 
-                    numerosos ejemplos de estructuras de gobierno reforzadas, de formación de profesionales y de desarrollo de los sistemas con los que trabajan.`,
-                    title:`Acelerar el crecimiento del fútbol femenino`,
-                    paragraph2: `La FIFA ha hecho grandes progresos fuera del terreno de juego para acelerar el crecimiento del fútbol femenino. Se están barajando opciones
-                    de reestructurar el calendario para globalizar tanto la exposición como las oportunidades de juego, sin perder de vista la generación de ingresos que pueden 
-                    reinvertirse en profesionalizar la disciplina, al tiempo que se mantienen sus características específicas.`,
+                    paragraph1: `Muramaat intentó que su voz sonara tranquila. Nunca se había sentido incómoda
+                     compartiendo una fogata con otros viajeros en el camino a los mercados. Sin embargo, esta
+                    era la primera vez que se sentaba, con las llamas de por medio, frente a una noxiana,
+                     una con una gigantesca arma enfundada en su espalda..`,
+                    title:`CONFESIONES DE UNA ESPADA ROTA: PARTE I`,
+                    paragraph2: `El borde afilado del arado cortaba a través de la dura capa superior del suelo,
+                     dejando atrás la vulnerabilidad del invierno para abrir paso a los cielos primaverales.
+                    Riven caminó por el pequeño campo detrás de la herramienta impulsada por los bueyes,
+                    su atención estaba entre poder estabilizar las amplias asas y las palabras extranjeras
+                     que torpemente salían de su boca..`,
                 },
                 section2:{
-                    titleList: `Federaciones Miembros`,
-                    description: `Como representantes de la FIFA en sus países, las federaciones tienen la obligación de respetar los estatutos, objetivos e ideales del organismo 
-                    rector del fútbol, y promover y gestionar el fútbol en consecuencia.`,
+                    titleList: `CAMPEONES A LOS QUE RIVEN HACE COUNTER`,
+                    description: `Campeones contra los que riven por su kit de habilidades, tiende a ganar o ser mas fuerte.`,
                     list:[
-                        "Asia",
-                        "Africa",
-                        "Norteamerica",
-                        "Centroamerica",
-                        "Suramerica",
-                        "Oceania",
-                        "Europa"
+                        "Shen",
+                        "Dr.Mundo",
+                        "Singed",
+                        "Nasus",
+                        "Kayle",
+                        "Annie",
+                        "Zac"
                     ],
-                    confederaciones:{
-                        description:"Estas confederaciones de fútbol resultan de las asociaciones de los diferentes miembros de la FIFA, bien por compartir intereses comunes o bien por razón de ubicación.",
+                    concejos:{
+                        description:"Algunos de los concejos que debes saber para aprender a mainear riven.",
                         list:[
                             {
-                                name:"CAF (Confederación Africana de Fútbol)",
-                                paragraph:`Es la segunda confederación con mayor número de miembros después de la europea, concretamente integra 54 asociaciones en todo el continente africano.`
+                                name:"Colarle un Autoataque a Cada Habilidad",
+                                paragraph:`Intenta colarle un autoataque a cada habilidad para hacer el máximo daño y aprovechar la pasiva de la campeona (Hoja Rúnica).`
                             },
                             {
-                                name:"AFC (Confederación Asiática de Fútbol)",
-                                paragraph:`Se trata del organismo regulador del fútbol asiático.`
+                                name:"La Tercera Q (Alas Rotas)",
+                                paragraph:`Te permite atravesar paredes. Eso sí, el salto va hacia donde está mirando la campeona, no hacia el cursor del ratón.`
                             },
                             {
-                                name:"CONCACAF (Confederación de Fútbol de la Asociación del Norte, Centroamérica y el Caribe)",
-                                paragraph:`Integrada por 41 miembros de tres zonas diferentes, Norteamérica, Centroamérica y El Caribe.`
+                                name:"Cancelar Animaciones",
+                                paragraph:`Puedes cancelar animaciones acumulando hechizos, y es la mecánica clave que diferencia una buena Riven de un verdadero “main” de la campeona.`
                             },
                             {
-                                name:"OFC (Confederación de Fútbol de Oceanía)",
-                                paragraph:`Es la más joven de las seis confederaciones. Integrada por 14 miembros y con sede en Auckland.`
-                            },
-                            {
-                                name:"CONMEBOL (Confederación Sudamericana de Fútbol)",
-                                paragraph:`se trata de la confederación con menor número de miembros, integrada por tan solo 10 asociaciones que representan a los países más importantes de Sudamérica.`
-                            },
+                                name:"Practica",
+                                paragraph:`Visita la herramienta de practica, para mejorar o especializarte con las habilidades de la campeona.`
+                            }
     
                         ]
                          }
                         
                 },
                 section3:{
-                    title:"Consejo de la FIFA",
-                    paragraph:`A continuación se expone el consejo del organismo.`,
+                    title:"Mejores Runas para Riven",
+                    paragraph:`A continuación se muestran las mejores runas con las que fucionaria mejore riven.`,
                     list:[
                         {
-                            cargo:"Presidente",
-                            name:"Gianni Infantino"
+                            name:"Conquistador",
+                            description:"Los ataques básicos o hechizos que inflijan daño a un campeón enemigo otorgan 2 acumulaciones de Conquistador durante 5 s, lo que otorga 2-4.5 de fuerza adaptable por acumulación."
                         },
                         {
-                            cargo:"Vicepresidente",
-                            name:"Lambert Maltock"
+                            name:"Triunfo",
+                            description:"Los asesinatos y asistencias restauran un 5% de la vida que te falte, un 2.5% de tu vida máxima y otorgan otros 20 de oro."
                         },
                         {
-                            cargo:"Secretaría General",
-                            name:"Gianni Infantino"
+                            name:"Leyenda-Tenacidad",
+                            description:"Obtienes un 5% de tenacidad y un 1.5% adicional por cada acumulación de Leyenda (10 acumulaciones como máximo)."
                         },
                         {
-                            cargo:"Miembro del consejo",
-                            name:"Mariano Araneta"
+                            name:"Ultimo Esfuerzo",
+                            description:"Infliges un 5-11% más de daño a los campeones mientras estés por debajo del 60% de vida."
                         },
                         {
-                            cargo:"Miembro del consejo",
-                            name:"Praful Patel"
+                            name:"Capa de Nimbo",
+                            description:"Después de lanzar un hechizo de invocador, obtienes un aumento de velocidad de movimiento que dura 2 s y te permite atravesar unidades."
                         },
                         {
-                            cargo:"Miembro del consejo",
-                            name:"Mamoutou Touré"
+                            name:"Trascendencia",
+                            description:"Obtienes bonificaciones al alcanzar los siguientes niveles"
                         },
                     ]
                 },
                 section4:{
-                    title:"Organización",
-                    paragraph:`El ingreso a la FIFA está abierto a cualquier asociación o federación encargada de organizar el fútbol en su país. 
-                    Normalmente hay un solo afiliado por país; sin embargo, también hay casos de asociaciones de naciones sin Estado, principalmente las británicas
-                    (Inglaterra, Escocia, Gales e Irlanda del Norte), por ser el Reino Unido el lugar donde nació el fútbol moderno. Además, existen entre otras, 
-                    como la selección de las Islas Feroe, independiente de Dinamarca.`,
-                    
+                    title:"CONFESIONES DE UNA ESPADA ROTA: PARTE 2",
+                    paragraph:`El cielo nublado se había despejado desde la entrada de los magistrados.
+                     Cuando las enormes puertas al fondo de la sala se abrieron nuevamente, Riven
+                      vio cómo el recinto repleto de aldeanos se había dividido por un rayo deslumbrante
+                       de luz de día. Caminó por el umbral de la sala, su movimiento empujaba el aire
+                        inmóvil del recinto como si se liberara una respiración contenida.`,                  
                 }                                   
             },
             article3:{
                 title:"Un Poco de Historia",
-                paragraph:`El aumento de la popularidad y la competencia internacional en el fútbol a principios del siglo XX hicieron necesario crear 
-                un único organismo regulador del deporte a nivel mundial. La Federación Inglesa de Fútbol sostuvo discusiones acerca de la formación de
-                una federación internacional, pero esta iniciativa no tuvo acogida. Entonces, las autoridades nacionales de fútbol de otros siete países
-                europeos —Bélgica, Dinamarca, España (Real Madrid Club de Fútbol), Francia, Países Bajos, Suecia y Suiza—6​ se reunieron para asociarse y,
-                de esta manera, la FIFA fue fundada en París el 21 de mayo de 1904. El nombre francés y su acrónimo se han mantenido hasta la fecha, 
-                incluso fuera de los países francófonos.`
+                paragraph:`Construido en conflicto perpetuo, Noxus nunca ha tenido una escasez de huérfanos de guerra. 
+                Tras perder a su padre en una batalla desconocida y a su madre en su propio nacimiento, 
+                Riven creció en una granja dirigida por el imperio, en las laderas rocosas de Trevale.
+                El esfuerzo físico y la voluntad feroz mantenían a los niños vivos y ocupados en la dura tierra,
+                 pero Riven ansiaba mucho más que un trozo de pan en la mesa. Ella observaba a los reclutas de los
+                  batallones regionales que visitaban las granjas año tras año. En ellos, veía una oportunidad
+                   para seguir la vida que tanto soñaba. Cuando finalmente le ofreció al imperio su fuerza,
+                 sabía que Noxus la acogería como la hija que anhelaba ser. Riven demostró haber nacido para el combate.`
             }
         }
        }))
