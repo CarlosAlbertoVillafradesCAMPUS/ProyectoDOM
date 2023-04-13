@@ -3,7 +3,7 @@ export default {
         localStorage.setItem("myHeader", JSON.stringify({ //setItem se refiera guardar en localstorage con el nombre de "myheader" 
             title: {
                 name:`RIVEN`,
-                logo: "../image/logo-removebg-preview.png",
+                logo: "image/logo-removebg-preview.png",
             },
             tournament:[
                 {
@@ -51,27 +51,27 @@ export default {
                         {
                             name:`"pasiva" ESPADA RUNICA`,
                             description:"Las habilidades de Riven cargan su espada y sus ataques básicos consumen cargas para infligir daño adicional.",
-                            image: "../image/pasivaRiven.png"
+                            image: "image/pasivaRiven.png"
                         },
                         {
                             name: `"Q" ALAS ROTAS`,
                             description:"Riven lanza una serie de golpes. Esta habilidad puede reactivarse tres veces en poco tiempo. El tercer impacto hará retroceder a los enemigos cercanos.",
-                            image: "../image/QRiven.png"
+                            image: "image/QRiven.png"
                         },
                         {
                             name:`"W" ESTALLIDO DE KI`,
                             description:"Riven emite un Estallido de ki que daña y aturde a los enemigos cercanos.",
-                            image: "../image//WRiven.png"
+                            image: "image//WRiven.png"
                         },
                         {
                             name:`"E" VALOR`,
                             description:"Riven avanza una corta distancia y bloquea el daño que recibe.",
-                            image: "../image//ERiven.png"
+                            image: "image//ERiven.png"
                         },
                         {
                             name:`"R" HOJA DE EXILIO`,
                             description:"Riven potencia su fiel arma con energía que aumenta su daño de ataque y alcance. Además, mientras dure la activación, obtiene la capacidad de usar una vez Cuchillada de viento, un potente ataque a distancia.",
-                            image: "../image//RRIVEN.png"
+                            image: "image//RRIVEN.png"
                         },
                     ]
                 },
@@ -98,7 +98,7 @@ export default {
     },
     dataMybanner(){
         localStorage.setItem("myBanner", JSON.stringify({
-            image: "../image/imageBanner.jpg",
+            image: "image/imageBanner.jpg",
             information:{
                 title: `Riven "La Exiliada"`,
                 text: `Riven, que anteriormente era una líder de los guerreros de Noxus, está exiliada en una tierra que alguna vez intentó conquistar.
@@ -121,7 +121,7 @@ export default {
                     title: `Riven Centinela`,
                     date: `9/marzo/2023`,
                     information: `Riven siempre estuvo obsesionada por sus crímenes como soldado noxiano. Es por eso que finalmente se unió a los centinelas.`,
-                    image: `../image/image1.jpg`,
+                    image: `image/image1.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
@@ -132,7 +132,7 @@ export default {
                     title: `Riven Flor Espiritual`,
                     date: `7/septiembre/2021`,
                     information: `Riven fue destruida en el calor de la batalla hace miles de años, su espada se hizo añicos en el proceso.`,
-                    image: `../image/image2.jpg`,
+                    image: `image/image2.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
@@ -143,7 +143,7 @@ export default {
                     title: `Riven Espada Valiente`,
                     date: `26/septiembre/2020`,
                     information: `Riven demostró haber nacido para el combate. A pesar de su corta edad, sus años de trabajo duro permitieron que dominase su gran poder.`,
-                    image: `../image/image3.jpg`,
+                    image: `image/image3.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
@@ -154,7 +154,7 @@ export default {
                     title: `Riven Pulso de Fuego`,
                     date: ` 14/mayo/2019`,
                     information: `Riven cree en la pureza temporal, y castigará a cualquiera que abuse de la manipulación del tiempo para su propio beneficio.`,
-                    image: `../image/image4.jpg`,
+                    image: `image/image4.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
@@ -165,7 +165,7 @@ export default {
                     title: `Riven Portadora de Amanecer`,
                     date: `23/abril/2019`,
                     information: `Nacida de las agitadas energías en el alba de la creación, es la personificación viviente del orden en el cosmos.`,
-                    image: `../image/image5.jpg`,
+                    image: `image/image5.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
@@ -176,7 +176,7 @@ export default {
                     title: `Riven Arcadia`,
                     date: `17/mayo/2018`,
                     information: ` Siendo honestos, si le cambias el color de cabello a púrpura y le pones un labial, es idéntica a Kai'Sa.`,
-                    image: `../image/image6.jpg`,
+                    image: `image/image6.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
@@ -187,7 +187,7 @@ export default {
                     title: `Riven Conejita`,
                     date: `6/abril/2017`,
                     information: `la Conejita Guerrera vuelve a estar en los ojos de la comunidad. Además la línea de aspectos `,
-                    image: `../image/image7.jpg`,
+                    image: `image/image7.jpg`,
                     btn: {
                         name:`Mas Informacion`,
                         href: `https://www.leagueoflegends.com/es-es/champions/riven/`
