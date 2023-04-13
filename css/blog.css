@@ -2,7 +2,6 @@
   font-family: "LOL";
   src: url(./BeaufortforLOL-Bold.otf)
 }
-
 /* stylelint-disable selector-list-comma-newline-after */
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -124,8 +123,7 @@ body{
   font-family: "LOL"!important;
 }
 h1,h2,h3,h4,h5,h6{
-  font-family: "LOL" !important;
-  
+  font-family: "LOL" !important; 
 }
 .miHeader{
   background-image: url(../image/fondoHeader.webp);
